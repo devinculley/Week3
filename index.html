@@ -5,53 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My  Website</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .flex-item {
+        flex: 1 1 calc(33.33% - 20px); /* Flexible width for items */
+        box-sizing: border-box;
+      }
+
+      .textarea-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      textarea {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      button {
+        align-self: flex-start;
+      }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Farm</h1>
+  <div class="container text-center">
+    <h1>Welcome to our Farm!</h1>
     <p>In the heart of the West!</p>
+       
+    <img src="IMG_20170703_152523157_HDR.jpg" alt="Farm Image" width="500" height="300">
     
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
+    <nav class="navbar navbar-default">       
+
           <div class="navbar-header">
                       </div>
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
+            <li><a href="second.html">Products</a></li>
+            
           </ul>
         </div>
       </nav>
 
-    
-    <img src="IMG_20211130_073102296_HDR.jpg" alt="Farm Image" width="500" height="300">
-     <p>We grow a variety of crops including:
-        <li>Tomatoes</li>
-        <li>Beans</li>
-        <li>Potatoes</li>
-        <li>Corn</li>
-        <li>Peppers</li>
-        <li>Squash</li>
-        <li>Carrots</li>
-     </p>
-    <p>We also raise livestock such as:</p>
-        <li>Cows</li>
-        <li>Chickens</li>
-        <li>Pigs</li>
-        <li>Sheep</li>
-             </body>  
-        
+    <a href="second.html"></a>
+   
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-sm-6">
+          
+          <h2>Our Farm</h2>
+          <p>We grow a variety of crops including:</p>
+          <ul>
+            <li>Potatoes</li>
+            <li>Wheat</li>
+            <li>Barley</li>
+            <li>Oats</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h2>Our Products</h2>
+          <p>We offer a range of products including:</p>
+          <ul>
+            <li>Fresh vegetables</li>
+            <li>Organic grains</li>
+            <li>Farm-fresh eggs</li>
+            <li>Meat products</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+             
+      <div class="flex-item">
+        <p>We also raise livestock such as:</p>
+        <ul>
+          <li>Cows</li>
+          <li>Chickens</li>
+          <li>Pigs</li>
+          <li>Sheep</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="textarea-container">
         <textarea rows="4" cols="50" placeholder="Leave a comment..."></textarea>
-    <br>
-    <button>Click me</button>
+        <button>Click me</button>
+    </div>
+
     <p>Our farm is located in the beautiful countryside and we are committed to sustainable farming practices!</p>
     
     <img src="318602300_685432659983447_5612484422441093735_n.jpg" alt="Farm Image" width="500" height="300">
     
     
-        
       <div class="container">
-        
+      </div>  
       <table class="table">
         <thead>
           <tr>
@@ -64,31 +118,26 @@
         <tbody class="table-group-divider">
           <tr>
             <th scope="row">1</th>
-            <td>Moose</td>
-            <td>Otto</td>
             <td>Joe</td>
+            <td>Oliver</td>
+            <td>Moose</td>
           </tr>
           <tr>
             <th scope="row">2</th>
             <td>Jacob</td>
-            <td>Thor</td>
+            <td>Wagner</td>
             <td>Fats</td>
           </tr>
           <tr>
             <th scope="row">3</th>
             <td>John</td>
-            <td>Douglas</td>
-            <td>BD</td>
+            <td>Davison</td> 
+            <td>JD</td>
           </tr>
         </tbody>
       </table>
-
-      
-
-    <p>Set up an online account for faster service!</p> 
-    <p>Phone: 208-555-1234</p>
-    <p>Email: culleyfarms@gmail.com
-    </p>
+    
+    <p>Email us to set up an online account for faster service!</p> 
     <p>LOG IN HERE:</p>
 
 
@@ -100,12 +149,23 @@
         <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
         <label for="floatingPassword">Password</label>
       </div>
+
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
     
+       <p>Phone: 208-555-1234</p>
+    
+    <p>Email: culleyfarms@gmail.com
+    </p>
 
     <p>Follow us on social media!</p>
     <ul>
         <li><a href="https://www.facebook.com/culleyfarms">Facebook</a></li>
         <li><a href="https://www.instagram.com/culleyfarms">Instagram</a></li>
         <li><a href="https://www.twitter.com/culleyfarms">Twitter</a></li>
+    </ul>
 </body>
-</html> 
+</html>
