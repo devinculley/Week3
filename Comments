@@ -5,5 +5,5 @@ Next is the body tag which encompasses the "meat and potatoes".
 I learned and explored many different classes and styles.
 Divs were used with bootstrap elements to create the layout of the page.
 I used col grid sizing to achieve the stacking of text when page is reduced in width.
-I used flexbox to create the layout of the page.
+I used the flexbox to create the layout of the page.
 
